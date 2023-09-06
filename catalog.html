@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catalog - BookNook</title>
+</head>
+<body>
+    <header class="custom-header">
+        <nav>
+            <a href="index.html" class="booknook-icon">BookNook</a>
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="catalog.html" class="nav-link">Catalog</a>
+            <a href="signin.html" class="nav-link">Sign In</a>
+            <a href="signup.html" class="nav-link">Sign Up</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="catalog">
+            <h1>Book Catalog</h1>
+            <div class="books">
+            </div>
+        </section>
+    </main>
+
+    <script src="catalog.js"></script>
+    <script src="checkAuth.js"></script>
+    <script>
+        const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+    
+        if (loggedInUser) {
+            alert(`Welcome back, ${loggedInUser.username}! You can now like and comment on books.`);
+        } else {
+        }
+    </script>
+</body>
+</html>

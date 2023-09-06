@@ -1,0 +1,177 @@
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('background.gif') no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.custom-header {
+    background-color: rgba(36, 41, 46, 0.1); 
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.catalog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.book {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.book img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.custom-header nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.custom-header .nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 10px; 
+    padding: 5px 10px; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-header .nav-link:hover {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.custom-header .booknook-icon {
+    font-size: 24px; 
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.custom-header .search-box {
+    margin-right: 10px; 
+    position: relative;
+}
+
+.custom-header .search-box input[type="text"] {
+    width: 200px; 
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #333; 
+}
+
+
+.custom-header .right-section {
+    display: flex;
+    align-items: center;
+}
+
+.custom-header .right-section a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.form-box {
+    background-color: #fff; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-box button:hover {
+    background-color: #0056b3;
+}
+
+
+.book .like-button,
+.book .comment-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.book .like-button:hover,
+.book .comment-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .form-box {
+        padding: 10px;
+    }
+
+    .form-box h2 {
+        font-size: 1.2rem;
+    }
+}
