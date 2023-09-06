@@ -17,10 +17,10 @@ Code editor (e.g., Visual Studio Code)
 
 Installation
 Clone the repository to your local machine:
-git clone https://github.com/yourusername/booknook.git
+git clone https://github.com/a-aliyeva/BookNook.git
 
 Navigate to the project directory:
-cd booknook
+cd BookNook
 
 Open the project in your code editor.
 
